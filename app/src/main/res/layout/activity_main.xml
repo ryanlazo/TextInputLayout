@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:padding="@dimen/activity_padding"
+  tools:context="edu.cnm.deepdive.textinputlayout.MainActivity">
+
+ <android.support.constraint.Guideline
+   android:id="@+id/vertical_center_line"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:orientation="vertical"
+   app:layout_constraintGuide_percent="0.5"/>
+
+  <android.support.design.widget.TextInputLayout
+    android:id="@+id/first_name_layout"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="@dimen/half_margin"
+    app:hintEnabled="true"
+    app:hintAnimationEnabled="true"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="@id/vertical_center_line"/>
+
+  <android.support.design.widget.TextInputEditText
+    android:id="@+id/first_name"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="@string/first_name"
+    android:inputType="text"/>
+
+
+  <android.support.design.widget.TextInputLayout
+    android:id="@+id/last_name_layout"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/half_margin"
+    app:hintEnabled="true"
+    app:hintAnimationEnabled="true"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="@id/vertical_center_line"
+    app:layout_constraintRight_toRightOf="parent"/>
+
+  <android.support.design.widget.TextInputEditText
+    android:id="@+id/last_name"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="@string/last_name"
+    android:inputType="text"/>
+</android.support.constraint.ConstraintLayout>

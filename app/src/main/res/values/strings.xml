@@ -1,0 +1,5 @@
+<resources>
+  <string name="app_name">TextInputLayout</string>
+  <string name="first_name">First name</string>
+  <string name="last_name">last name</string>
+</resources>
